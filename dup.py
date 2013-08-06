@@ -59,9 +59,9 @@ b=merge_sort(a)#Sort the array first
 s=[]
 s.append(b[0])
 j=0
-for i in range(n):
-        if s[j]!=a[i]:
-                s.append(a[i])
+for i in range(1,n):
+        if s[j]!=b[i]:
+                s.append(b[i])
                 j=j+1
 print 'Array after removing duplicate elements:\n'
 print s
